@@ -5,8 +5,12 @@ time = input("Using morning, afternoon, or evening, what time of day is it? ").l
 print (f"What day is it?  {day}")
 print (f"What time of day? {time}")
 #Any time for monday offers the same suggestion.
-if day == "monday":
+if day == "monday" and time == "morning":
     print("Suggestion: Monday is just the start. Take it easy to get through the rest of the week!")
+elif day == "monday" and time == "afternoon":
+    print("Suggestion: Steady! Pace your self with the tasks of the week.")
+elif day == "monday" and time == "evening":
+    print("Suggestion: Got through without a case of the Mondays! Be ready to hit it hard the rest of the week.")    
 elif day == "tuesday" and time == "morning":
     print("Suggestion: Rise and shine. Get started with a morning workout!")
 elif day == "tuesday" and time == "afternoon":
@@ -20,8 +24,10 @@ elif day == "wednesday" and time == "afternoon":
 elif day == "wednesday" and time == "evening":
     print("Suggestion: Rejuvenate! Attend a midweek service and fellowship with friends!")
 elif day == "friday" and time == "morning":
-    print("Suggestion: Finally Friday! Finish strong, and complete anything on your plan that need to be finished.")
-elif day == "friday" and time == "afternoon" or time == "evening":
+    print("Suggestion: Finally Friday! Finish strong, and complete anything on your plan that needs to be finished.")
+elif day == "friday" and time == "afternoon":
+    print("Suggestion: Almost there! Great time to set a plan for next week.")
+elif day == "friday" and time == "evening":
     print("Suggestion: TGIF! Perfect time to wind down and relax from a busy week!")
 elif day == "saturday" or day == "sunday":
     #Any time for saturday or sunday reflects the same suggestion.
