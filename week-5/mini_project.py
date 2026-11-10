@@ -52,3 +52,5 @@ while True:
     elif option == "5":
         print("Process complete. Thank you for using Number Cruncher. Goodbye!")
         break
+    else:
+        print("Invalid input. Please choose an option between 1 and 5.")
