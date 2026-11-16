@@ -1,8 +1,8 @@
 #Warmup 2: Functions that Return Values
-#Write Celsius to Fahrenheight function
+#Write Celsius to Fahrenheight function with result. Used C as value.
 def celsius_to_fahrenheight(c):
     return (c * 9/5) + 32
-#Write Fahrenheight to Celsius function
+#Write Fahrenheight to Celsius function with result. Used F as value.
 def fahrenheight_to_celsius(f):
     return (f - 32) * 5/9
 #Print Celsius to Fahrenheight
