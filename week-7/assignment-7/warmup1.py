@@ -1,5 +1,5 @@
 #Warmup 1: Read a Text File Line by Line
-"""Open the file in as read only and automatically close it when the block exits."""
+"""Open the file as read only and automatically close it when the block exits."""
 with open("../data/notes.txt", "r") as file:
     """Convert all lines from the file to a list."""
     lines = file.readlines()
