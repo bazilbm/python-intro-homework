@@ -5,9 +5,9 @@ from datetime import datetime
 now = datetime.now()
 #1. Use os.path.exists() to verify that ../data/expenses.csv exists before opening it. If it doesn't, print an error message and stop.
 if os.path.exists("../data/expenses.csv"):
-    print("Found it!")
+    print("expenses.csv found.")
 else:
-    print("File not found.")
+    print("Error: expenses.csv file not found.")
     exit()
 #2. Read ../data/expenses.csv into a list of dictionaries using csv.DictReader.
 with open("../data/expenses.csv", "r") as file:
