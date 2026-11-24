@@ -35,6 +35,10 @@ else:
         except ValueError as e:
             value_error_message = f"Row {row_number}: ValueError — {e}"
             skipped_rows.append(value_error_message)
+        #Catch rows missing an expected column key.
+        except KeyError as e:
+            key_error_message = f"Row {row_number}: KeyError — missing key {e}"
+            skipped_rows.append(key_error_message)
     #Calculate summary counts.
     skipped_total = len(skipped_rows)
     clean_total = len(clean_rows)
