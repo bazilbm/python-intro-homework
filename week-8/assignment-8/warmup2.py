@@ -9,7 +9,6 @@ while True:
         #If denominator is not zero, print normal and break.
         print(f"{numerator} ÷ {denominator} = {result}")
         break
-    #Could add except ValueError here to handle user not inputting a number.
-        #Catch the crash that normally happens when dividing by zero and print message to try a non-zero denominator.
+    #Catch the crash that normally happens when dividing by zero and print message to try a non-zero denominator.
     except ZeroDivisionError:
         print("Can't divide by zero. Please try a non-zero denominator.")
