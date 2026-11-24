@@ -7,4 +7,4 @@ try:
     print("File read successfully.")
     #If file does note exist, print FileNotFound Error.
 except FileNotFoundError:
-    print("Error: 'missing.txt was not found. Please check the file path and try again.")
+    print("Error: 'missing.txt' was not found. Please check the file path and try again.")
